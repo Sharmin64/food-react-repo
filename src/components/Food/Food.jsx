@@ -1,15 +1,19 @@
 import React from 'react';
+import "./Food.css"
 
 const Food = (props) => {
-  console.log(props.food)
+  //console.log(props)
   const {strArea,strMeal,strMealThumb,strTags} = props.food
   return (
     <div className='food-card'>
-      <h2>Food is here </h2>
+       <img className='image' src={strMealThumb} alt="" />
+      <div className='food-info'>
       <h3>Food Area:{strArea}</h3>
-      <p>meal: {strMeal}</p>
-      <img src={strMealThumb} alt="" />
-      <p>recipef:f{strTags?strTags:"null"}</p>
+      <p>Meal: {strMeal}</p>
+      <p>Recipe:{strTags?strTags:"null"}</p>
+     </div>
+     
+     <button className='btn-food'>Add Food Item</button>
     </div>
   );
 };
