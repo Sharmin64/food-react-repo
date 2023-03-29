@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import './App.css'
-import Food from './components/Food/Food'
+import Meals from './components/Meals/Meals'
 import Home from './components/Home/Home'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Home></Home>
-      <Food></Food>
+      <Meals></Meals>
        
     </div>
   )

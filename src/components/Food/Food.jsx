@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-const Food = () => {
-  const [food,setFood] = useState([])
-  useEffect(() => {
-    fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=a')
-      .then(res => res.json())
-    .then(data=>setFood(data))
-  }, [])
-  useEffect(() => {
-    
-  },[])
+const Food = (props) => {
+  console.log(props.food)
+  const {strArea,strMeal,strMealThumb,strTags} = props.food
   return (
-    <div>
-      
+    <div className='food-card'>
+      <h2>Food is here </h2>
+      <h3>Food Area:{strArea}</h3>
+      <p>meal: {strMeal}</p>
+      <img src={strMealThumb} alt="" />
+      <p>recipef:f{strTags?strTags:"null"}</p>
     </div>
   );
 };
