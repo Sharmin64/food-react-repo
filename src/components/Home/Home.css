@@ -1,0 +1,23 @@
+.navbar {
+  background-color: gray;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  /*padding: 0 100px;*/
+  padding-left: 100px;
+  padding-right: 100px;
+  height: auto;
+}
+
+.navbar img {
+  width: 80px;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  /*color: #FFFFFF;*/
+  /*margin-right: 30px;*/
+  margin-left: 30px;
+  font-size: 20px;
+}
